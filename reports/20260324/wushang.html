@@ -279,7 +279,7 @@ body {
     .charts-grid { grid-template-columns: 1fr; }
     .comparison-table { font-size: 11px; }
     .comparison-table th, .comparison-table td { padding: 8px 3px; font-size: 11px; }
-    .comparison-table th:nth-child(n+6), .comparison-table td:nth-child(n+6) { display: none; }
+    .comparison-table th:nth-child(n+7), .comparison-table td:nth-child(n+7) { display: none; }
 }
 
 /* 动画 */
@@ -300,7 +300,7 @@ body {
         <div class="header-icon">🍜</div>
         <div class="header-content">
             <h1>美团经营宝 · 每日数据报告</h1>
-            <p>📅 2026-03-23 &nbsp;|&nbsp; 🕐 2026-03-24 16:16:17 &nbsp;|&nbsp; 📊 点评平台数据</p>
+            <p>📅 2026-03-23 &nbsp;|&nbsp; 🕐 2026-03-24 16:30:16 &nbsp;|&nbsp; 📊 流量·点评 / 交易·美团+点评</p>
         </div>
     </div>
 
@@ -316,8 +316,18 @@ body {
             
             <div class="metric-item">
                 <div class="metric-icon">💰</div>
-                <div class="metric-value revenue">2,599</div>
+                <div class="metric-value revenue">1,686</div>
                 <div class="metric-label">营业额</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon">🎫</div>
+                <div class="metric-value coupon">¥1,286</div>
+                <div class="metric-label">核销金额</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon">🎟️</div>
+                <div class="metric-value coupon">21</div>
+                <div class="metric-label">核销券数</div>
             </div>
             <div class="metric-item">
                 <div class="metric-icon">❤️</div>
@@ -346,8 +356,18 @@ body {
             
             <div class="metric-item">
                 <div class="metric-icon">💰</div>
-                <div class="metric-value revenue">3,517</div>
+                <div class="metric-value revenue">3,628</div>
                 <div class="metric-label">营业额</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon">🎫</div>
+                <div class="metric-value coupon">¥2,302</div>
+                <div class="metric-label">核销金额</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon">🎟️</div>
+                <div class="metric-value coupon">38</div>
+                <div class="metric-label">核销券数</div>
             </div>
             <div class="metric-item">
                 <div class="metric-icon">❤️</div>
@@ -370,12 +390,14 @@ body {
     <!-- 汇总对比 -->
     
     <div class="summary-card">
-        <div class="summary-title">📊 门店数据对比（流量核心指标）</div>
+        <div class="summary-title">📊 门店数据对比</div>
         <table class="comparison-table">
             <thead>
                 <tr>
                     <th>门店</th>
                     <th>营业额</th>
+                    <th>核销金额</th>
+                    <th>核销券数</th>
                     <th>新增收藏</th>
                     <th>打卡人数</th>
                     <th>新增评价</th>
@@ -385,14 +407,18 @@ body {
                 
             <tr>
                 <td class="store-name-cell">武商mall店</td>
-                <td class="highlight">2,599</td>
+                <td class="highlight">1,686</td>
+                <td>¥1,286</td>
+                <td>21</td>
                 <td>10</td>
                 <td>17</td>
                 <td>1</td>
             </tr>
             <tr>
                 <td class="store-name-cell">南昌万象城店</td>
-                <td class="highlight">3,517</td>
+                <td class="highlight">3,628</td>
+                <td>¥2,302</td>
+                <td>38</td>
                 <td>15</td>
                 <td>25</td>
                 <td>2</td>
@@ -440,10 +466,10 @@ body {
 
 <script>
 const labels = ["2026-03-23"];
-const revenues = [2599.0];
+const revenues = [1686.0];
 const favs = [10.0];
 const checkins = [17.0];
-const coupons = [0];
+const coupons = [21.0];
 const totrev = [1.0];
 const badrev = [0];
 
