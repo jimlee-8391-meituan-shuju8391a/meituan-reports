@@ -315,16 +315,6 @@ body {
         <div class="metrics-grid">
             
             <div class="metric-item">
-                <div class="metric-icon">💰</div>
-                <div class="metric-value revenue">0</div>
-                <div class="metric-label">营业额</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-icon">🧾</div>
-                <div class="metric-value coupon">0</div>
-                <div class="metric-label">总消费金额</div>
-            </div>
-            <div class="metric-item">
                 <div class="metric-icon">🎫</div>
                 <div class="metric-value coupon">0.0</div>
                 <div class="metric-label">套餐核销金额</div>
@@ -347,22 +337,22 @@ body {
             <div class="metric-item">
                 <div class="metric-icon">⭐</div>
                 <div class="metric-value reviews">2</div>
-                <div class="metric-label">新增评价(昨日·点评)</div>
+                <div class="metric-label">新增评价数(昨日·点评)</div>
             </div>
             <div class="metric-item">
                 <div class="metric-icon">👍</div>
-                <div class="metric-value reviews">100%</div>
-                <div class="metric-label">好评率(昨日·点评)</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-icon">😊</div>
                 <div class="metric-value reviews">2</div>
                 <div class="metric-label">好评数(昨日·点评)</div>
             </div>
             <div class="metric-item">
-                <div class="metric-icon">😠</div>
+                <div class="metric-icon">👎</div>
                 <div class="metric-value bad">0</div>
                 <div class="metric-label">差评数(昨日·点评)</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon">📈</div>
+                <div class="metric-value reviews">100%</div>
+                <div class="metric-label">好评率(昨日·点评)</div>
             </div>
         </div>
     </div>
@@ -374,16 +364,6 @@ body {
         </div>
         <div class="metrics-grid">
             
-            <div class="metric-item">
-                <div class="metric-icon">💰</div>
-                <div class="metric-value revenue">0</div>
-                <div class="metric-label">营业额</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-icon">🧾</div>
-                <div class="metric-value coupon">0</div>
-                <div class="metric-label">总消费金额</div>
-            </div>
             <div class="metric-item">
                 <div class="metric-icon">🎫</div>
                 <div class="metric-value coupon">292.0</div>
@@ -407,22 +387,22 @@ body {
             <div class="metric-item">
                 <div class="metric-icon">⭐</div>
                 <div class="metric-value reviews">2</div>
-                <div class="metric-label">新增评价(昨日·点评)</div>
+                <div class="metric-label">新增评价数(昨日·点评)</div>
             </div>
             <div class="metric-item">
                 <div class="metric-icon">👍</div>
-                <div class="metric-value reviews">100%</div>
-                <div class="metric-label">好评率(昨日·点评)</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-icon">😊</div>
                 <div class="metric-value reviews">2</div>
                 <div class="metric-label">好评数(昨日·点评)</div>
             </div>
             <div class="metric-item">
-                <div class="metric-icon">😠</div>
+                <div class="metric-icon">👎</div>
                 <div class="metric-value bad">0</div>
                 <div class="metric-label">差评数(昨日·点评)</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-icon">📈</div>
+                <div class="metric-value reviews">100%</div>
+                <div class="metric-label">好评率(昨日·点评)</div>
             </div>
         </div>
     </div>
@@ -435,45 +415,39 @@ body {
             <thead>
                 <tr>
                     <th>门店</th>
-                    <th>营业额</th>
-                    <th>总消费金额</th>
                     <th>套餐核销金额</th>
                     <th>套餐核销券数</th>
                     <th>新增收藏(点评)</th>
                     <th>打卡人数(点评)</th>
-                    <th>新增评价(昨日·点评)</th>
-                    <th>好评率(昨日·点评)</th>
+                    <th>新增评价数(昨日·点评)</th>
                     <th>好评数(昨日·点评)</th>
                     <th>差评数(昨日·点评)</th>
+                    <th>好评率(昨日·点评)</th>
                 </tr>
             </thead>
             <tbody>
                 
             <tr>
                 <td class="store-name-cell">逆山·江西菜（武商MALL店）</td>
-                <td class="highlight">0</td>
-                <td>0</td>
                 <td>0.0</td>
                 <td>0</td>
                 <td>27</td>
                 <td>34</td>
                 <td>2</td>
-                <td>100%</td>
                 <td>2</td>
                 <td>0</td>
+                <td>100%</td>
             </tr>
             <tr>
                 <td class="store-name-cell">逆山•江西菜（南昌万象城店）</td>
-                <td class="highlight">0</td>
-                <td>0</td>
                 <td>292.0</td>
                 <td>2</td>
                 <td>26</td>
                 <td>11</td>
                 <td>2</td>
-                <td>100%</td>
                 <td>2</td>
                 <td>0</td>
+                <td>100%</td>
             </tr>
             </tbody>
         </table>
@@ -484,9 +458,9 @@ body {
         <div class="charts-title">📈 数据趋势分析</div>
         <div class="charts-grid">
             <div class="chart-container">
-                <div class="chart-header">💰 营业额趋势</div>
+                <div class="chart-header">🎫 套餐核销趋势</div>
                 <div class="chart-wrapper">
-                    <canvas id="revenueChart"></canvas>
+                    <canvas id="couponChart"></canvas>
                 </div>
             </div>
             <div class="chart-container">
@@ -496,13 +470,13 @@ body {
                 </div>
             </div>
             <div class="chart-container">
-                <div class="chart-header">🎫 套餐核销</div>
+                <div class="chart-header">⭐ 新增评价数</div>
                 <div class="chart-wrapper">
-                    <canvas id="couponChart"></canvas>
+                    <canvas id="reviewNewChart"></canvas>
                 </div>
             </div>
             <div class="chart-container">
-                <div class="chart-header">⭐ 评价数据</div>
+                <div class="chart-header">📈 好评率 & 好/差评数</div>
                 <div class="chart-wrapper">
                     <canvas id="reviewChart"></canvas>
                 </div>
@@ -554,64 +528,6 @@ const chartOptions = {
     }
 };
 
-// 营业额图表
-new Chart(document.getElementById('revenueChart'), {
-    type: 'line',
-    data: {
-        labels,
-        datasets: [{
-            data: revenues,
-            borderColor: '#e74c3c',
-            backgroundColor: 'rgba(231,76,60,0.1)',
-            borderWidth: 3,
-            tension: 0.4,
-            fill: true,
-            pointRadius: 4,
-            pointBackgroundColor: '#e74c3c'
-        }]
-    },
-    options: chartOptions
-});
-
-// 收藏打卡图表
-new Chart(document.getElementById('favCheckinChart'), {
-    type: 'line',
-    data: {
-        labels,
-        datasets: [
-            {
-                label: '新增收藏',
-                data: favs,
-                borderColor: '#e91e63',
-                backgroundColor: 'transparent',
-                borderWidth: 2,
-                tension: 0.4,
-                pointRadius: 3
-            },
-            {
-                label: '打卡人数',
-                data: checkins,
-                borderColor: '#ff9800',
-                backgroundColor: 'transparent',
-                borderWidth: 2,
-                tension: 0.4,
-                pointRadius: 3
-            }
-        ]
-    },
-    options: {
-        ...chartOptions,
-        plugins: {
-            ...chartOptions.plugins,
-            legend: {
-                display: true,
-                position: 'top',
-                labels: { usePointStyle: true, boxWidth: 8 }
-            }
-        }
-    }
-});
-
 // 套餐核销图表（金额柱 + 券数线）
 new Chart(document.getElementById('couponChart'), {
     type: 'bar',
@@ -656,7 +572,61 @@ new Chart(document.getElementById('couponChart'), {
     }
 });
 
-// 评价图表（新增评价 + 好评率 + 好评数 + 差评数）
+// 收藏打卡图表
+new Chart(document.getElementById('favCheckinChart'), {
+    type: 'line',
+    data: {
+        labels,
+        datasets: [
+            {
+                label: '新增收藏',
+                data: favs,
+                borderColor: '#e91e63',
+                backgroundColor: 'transparent',
+                borderWidth: 2,
+                tension: 0.4,
+                pointRadius: 3
+            },
+            {
+                label: '打卡人数',
+                data: checkins,
+                borderColor: '#ff9800',
+                backgroundColor: 'transparent',
+                borderWidth: 2,
+                tension: 0.4,
+                pointRadius: 3
+            }
+        ]
+    },
+    options: {
+        ...chartOptions,
+        plugins: {
+            ...chartOptions.plugins,
+            legend: {
+                display: true,
+                position: 'top',
+                labels: { usePointStyle: true, boxWidth: 8 }
+            }
+        }
+    }
+});
+
+// 新增评价数图表
+new Chart(document.getElementById('reviewNewChart'), {
+    type: 'bar',
+    data: {
+        labels,
+        datasets: [{
+            label: '新增评价数',
+            data: reviewNewArr,
+            backgroundColor: '#2196f3',
+            borderRadius: 6
+        }]
+    },
+    options: chartOptions
+});
+
+// 好评率 & 好/差评数图表
 new Chart(document.getElementById('reviewChart'), {
     type: 'line',
     data: {
